@@ -1,0 +1,243 @@
+/* Sponsor Platform CSS */
+
+/* Genel stiller */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Header ve menü */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    padding: 4rem 0;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-weight: 700;
+}
+
+/* İkonlu kutular */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+/* Kartlar */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 10px 10px !important;
+    padding: 15px 20px;
+}
+
+/* Butonlar */
+.btn {
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+/* Formlar */
+.form-control {
+    border-radius: 5px;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Listeler */
+.list-group-item {
+    border: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+}
+
+/* Tablolar */
+.table th {
+    font-weight: 600;
+    border-top: none;
+    border-bottom-width: 1px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Ödeme sistemi */
+.payment-method-card {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-method-card:hover {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.form-check-input:checked ~ .payment-method-card {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Uyarı ve bilgi kutuları */
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 15px 20px;
+}
+
+.alert-info {
+    background-color: #e6f3ff;
+    color: #0056b3;
+}
+
+.alert-warning {
+    background-color: #fff8e6;
+    color: #856404;
+}
+
+.alert-success {
+    background-color: #e6fff0;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #ffe6e6;
+    color: #721c24;
+}
+
+/* Rozet (badge) stiller */
+.badge {
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* Duyarlı tasarım için ekstra stiller */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .table-responsive {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
